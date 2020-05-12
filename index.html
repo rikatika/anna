@@ -1,1 +1,229 @@
-<img src='https://cbjpeg.stream.highwebmedia.com/stream?room=showsprinces&f=0.7914378855736701' onload='this.src="https://cbjpeg.stream.highwebmedia.com/stream?room=showsprinces&f="+Math.random()' onerror='this.src="https://cbjpeg.stream.highwebmedia.com/stream?room=showsprinces&f="+Math.random()'>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link href="https://www.donationalerts.com/css/widget_base.css?v=484" media="screen" rel="stylesheet" type="text/css">
+	<link href="https://www.donationalerts.com/css/animate.css?v=484" media="screen" rel="stylesheet" type="text/css">
+	<script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript" src="https://www.donationalerts.com/js/jquery.min.js?v=484"></script>
+	<script type="text/javascript" src="https://www.donationalerts.com/js/languages.js?v=484"></script>
+	<script type="text/javascript" src="https://www.donationalerts.com/js/primary.js?v=484"></script>
+	<script type="text/javascript" src="https://www.donationalerts.com/js/widget.js?v=484"></script>
+	<script type="text/javascript" src="https://www.donationalerts.com/js/jquery.lettering-0.6.1.min.js?v=484"></script>
+	<script type="text/javascript" src="https://www.donationalerts.com/js/jquery.browser.min.js?v=484"></script>
+	<script type="text/javascript" src="https://www.donationalerts.com/js/bootstrap.min.js?v=484"></script>        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300&amp;subset=latin,cyrillic-ext,cyrillic,latin-ext" rel="stylesheet" type="text/css">
+	        <script type="text/javascript">
+	            api_config = {
+	                twitch: {
+	                    client_id: '4l56ta1x0mptop7rbd5nsspbwxzxz7b'
+	                }
+	            }
+	            document_language = 'en_US';
+	            alert_8_billing_system_types = [];
+	        </script>
+	    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:100,200,300,400,700,800,900,1000&amp;subset=latin,cyrillic">
+
+</head>
+<body>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+		}
+
+		canvas,img {
+			left: 0px;
+			top: 0px;
+			position: relative;
+		}
+
+		img {
+			width: 954px;
+			opacity: 0.3;
+			top: -490px;
+			filter: grayscale(.75) blur(1px);
+		}
+
+
+		.video {
+			overflow: hidden;
+			width: 854px;
+			height: 480px;
+			margin: 20px;
+		}
+
+		.box {
+			width: 100%;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+
+		body {
+			background: #444;
+			color: #909;
+			text-shadow: 0px 0px 6px #fff;
+			font-size: 30px;
+			background: url('https://thumbs.gfycat.com/AmusingWatchfulEft-size_restricted.gif')
+		}
+
+		.blur {
+			filter: blur(10px);
+		}
+
+		.donate {
+			padding: 20px;
+			background: #909;
+			color: #fff;
+			position: absolute;
+			top: calc(50vh - 64px);
+    	left: calc(50% - 226px);
+			user-select: none;
+			cursor: pointer;
+		}
+
+	</style>
+	<div class='box'>
+		<h1>My home stream</h1>
+		<div class='video'>
+			<canvas class='blur'></canvas>
+			<img src="https://i.stack.imgur.com/NCRJI.gif" alt="">
+			<div class='btn donate'>CLICK SKIP AND DONATE ME PLES</div>
+		</div>
+		<div class="dg-container" style='width: 70%; height: 0px;'>
+			<div class="dg-content"></div>
+		</div>
+	</div>
+
+	<script>
+		const canvas = document.querySelectorAll('canvas')[0]
+
+		canvas.height = 480
+		canvas.width = 854
+
+		const ctx = canvas.getContext('2d')
+
+		function draw () {
+			const img = new Image()
+			img.src = 'https://cbjpeg.stream.highwebmedia.com/stream?room='+location.search.match(/[^=]+$/)+'&f='+Math.random()
+
+
+
+			img.onload = () => {
+				ctx.drawImage(img, 0,0)
+
+				setTimeout(() => {
+					draw()
+				})
+			}
+
+			img.onerror = () => {
+				canvas.style.background = '#444'
+			}
+		}
+
+		draw()
+
+		const btn = document.getElementsByClassName('btn')[0]
+
+		btn.addEventListener('click', () => {
+			open('https://www.donationalerts.com/r/alisa1588')
+			btn.classList.remove('donate')
+			canvas.classList.remove('blur')
+		})
+
+
+		setTimeout(() => {
+			btn.classList.add('donate')
+			canvas.classList.add('blur')
+		}, 60000)
+
+
+	</script>
+
+	<script src="https://www.donationalerts.com/js/socket.io-2.0.1.js" id="socketIo"></script>
+	<script src="/js/socket.io-2.0.1.js" id="socketIo"></script>
+<script>
+	var host_da = 'https://www.donationalerts.com';
+	var logId = null;
+	$(document).ready(function() {
+		token = 'Jzh7Lorft7joSSjnpGvw';
+		dgw = new donationGoalWidget('{\"widget_id\":\"3909433\",\"user_id\":\"3903858\",\"preset_id\":\"1\",\"json\":null,\"background_color\":\"#00FF00\",\"bar_color\":\"#db2bfb\",\"bar_background_color\":\"#CECECE\",\"bar_height\":\"33\",\"bar_border_radius\":\"0\",\"font_size_1\":\"0\",\"font_size_2\":\"0\",\"font_color_1\":\"#000000\",\"font_color_2\":\"#000000\",\"show_title\":\"1\",\"show_raised_amount\":\"1\",\"show_time_left\":\"1\",\"show_goal_borders\":\"1\",\"inner_text_style\":\"{\\\"font_style\\\":{\\\"font-family\\\":\\\"\\\\\\\"Roboto Condensed\\\\\\\"\\\",\\\"font-size\\\":\\\"25px\\\",\\\"color\\\":\\\"rgb(34, 34, 34)\\\",\\\"font-weight\\\":\\\"normal\\\",\\\"font-style\\\":\\\"normal\\\",\\\"text-decoration\\\":\\\"none\\\",\\\"text-transform\\\":\\\"none\\\",\\\"text-shadow\\\":\\\"0px\\\",\\\"text-shadow_color\\\":\\\"rgba(0, 0, 0, 0)\\\",\\\"letter-spacing\\\":\\\"0px\\\",\\\"word-spacing\\\":\\\"0px\\\",\\\"text-align\\\":\\\"center\\\",\\\"vertical-align\\\":\\\"middle\\\",\\\"background-color\\\":\\\"rgba(255, 255, 255, 0)\\\",\\\"border-radius\\\":\\\"0px\\\"},\\\"font_animation\\\":{\\\"text-animation\\\":\\\"none\\\",\\\"text-animation-mode\\\":\\\"letters\\\"}}\",\"outer_text_style\":\"{\\\"font_style\\\":{\\\"font-family\\\":\\\"\\\\\\\"Roboto Condensed\\\\\\\"\\\",\\\"font-size\\\":\\\"30px\\\",\\\"color\\\":\\\"#E30EB9\\\",\\\"font-weight\\\":\\\"normal\\\",\\\"font-style\\\":\\\"normal\\\",\\\"text-decoration\\\":\\\"none\\\",\\\"text-transform\\\":\\\"none\\\",\\\"text-shadow\\\":\\\"4px\\\",\\\"text-shadow_color\\\":\\\"#ffffff\\\",\\\"letter-spacing\\\":\\\"0px\\\",\\\"word-spacing\\\":\\\"0px\\\",\\\"text-align\\\":\\\"center\\\",\\\"vertical-align\\\":\\\"middle\\\",\\\"background-color\\\":\\\"rgba(255, 255, 255, 0)\\\",\\\"border-radius\\\":\\\"0px\\\"},\\\"font_animation\\\":{\\\"text-animation\\\":\\\"none\\\",\\\"text-animation-mode\\\":\\\"letters\\\"}}\",\"is_converted\":\"0\"}', '{\"goal_id\":\"3386374\",\"user_id\":\"3903858\",\"title\":\"Anal\",\"start_date\":\"2020-05-12 06:08:13\",\"end_date\":null,\"start_date_utc\":\"2020-05-12 03:08:13\",\"end_date_utc\":null,\"is_active\":\"1\",\"goal_amount\":\"100.00\",\"start_amount\":\"0.00\",\"raised_amount\":\"0.00\",\"goal_currency\":\"USD\",\"goal_amount_formatted\":\"100\",\"start_amount_formatted\":\"0\",\"raised_amount_formatted\":\"0\",\"min_point_formatted\":\"0\"}');
+
+		function initWsConnection() {
+			if (!isInIframe()) {
+				socket = io('wss://socket7.donationalerts.ru:443', {
+					reconnection: true,
+					reconnectionDelayMax: 5000,
+					reconnectionDelay: 1000,
+				});
+			}else{
+				socket = null;
+			}
+		}
+		initWsConnection();
+
+		function logWidgetTemp() {
+			var data = {
+				widget_id: 3909433,
+		        widget_type: 'goals_old',
+		        token: token
+			}
+			if (logId) {
+				data.log_id = logId;
+			}
+
+			$.ajax({
+		        url: host_da+'/api/logwidget',
+		        type: 'POST',
+		        cache: false,
+		        timeout: 5000,
+		        data: data,
+		        dataType: 'jsonp',
+		        success: function(response, textStatus, jqXHR){
+		            if (typeof response !== 'undefined' && typeof response.log_id !== 'undefined') {
+		                logId = response.log_id;
+		            }
+		        },
+		    });
+		    setTimeout(logWidgetTemp, 600000);
+		}
+
+		if (socket !== null) {
+			socket.on('connect', function(msg){
+				console.log('WS: connected');
+				socket.emit('add-user', { token: token, type: 'minor' });
+			});
+
+			socket.on('connect_error', function(msg){
+                console.log('WS: connection_error');
+			});
+
+			socket.on('connect_timeout', function(msg){
+				console.log('WS: connection_timeout');
+			});
+
+			socket.on('reconnect', function(msg){
+				console.log('WS: reconnected');
+			});
+
+			socket.on('update-dg_widget', function(msg){
+				dgw.updateWidget();
+			});
+			socket.on('update-dg_data', function(msg){
+				var message = $.parseJSON(msg);
+				if (message.goal_id == 3386374) {
+					dgw.updateRaisedAmount(message);
+				}
+			});
+		}
+
+		logWidgetTemp();
+	});
+</script>
+</body>
+</html>
